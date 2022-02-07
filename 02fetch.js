@@ -17,10 +17,9 @@ const renderCountry = function (data) {
   countriesContainer.style.opacity = 1;
 };
 
-const request = fetch(`https://restcountries.com/v2/name/armenia`);
-
 const getCountryData = function (country) {
-  fetch(`https://restcountries.com/v2/name/${country}`)
+  fetch(`https://restcountries.com/v3.1/name/${country}
+  `)
     .then(function (response) {
       return response.json();
     })
